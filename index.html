@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3p8nMFcV7oQPJk19QevSCWr3W6A==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather API</title>
+</head>
+<body>
+    <div id="app">
+        <!-- Search Bar -->
+        <div id="searchbar">
+            <input type="text" id="searchbarinput" placeholder="Enter city name">
+            <button id="searchIcon"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+
+        <!-- Data & City -->
+        <div id="info">
+            <p id="date"></p>
+            <h3 id="city">City Name</h3>
+        </div>
+
+        <!-- Weather Image -->
+        <div id="tempimg"></div>
+
+        <!-- Description -->
+        <div id="description">Weather Description</div>
+
+        <!-- Temperature -->
+        <div id="temp">--°C</div>
+
+        <!-- Extra Info -->
+        <div id="extrainfo">
+            <div class="info">
+                <h5>Highs</h5>
+                <p id="tempmax">--°C</p>
+            </div>
+            <div class="info">
+                <h5>Lows</h5>
+                <p id="tempmin">--°C</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
