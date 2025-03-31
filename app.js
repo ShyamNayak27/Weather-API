@@ -1,4 +1,3 @@
-//d726e8e56326d19dbec7f0d4a9007963
 
 const date = document.querySelector('#date');
 const city = document.querySelector('#city');
@@ -32,8 +31,8 @@ const getWeather = async () => {
     }
 
     try {
-        const apiKey = "d726e8e56326d19dbec7f0d4a9007963";
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=d726e8e56326d19dbec7f0d4a9007963&units=metric`);
+        const apiKey = //Your API key;
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`);
 
 
         if (!response.ok) {
